@@ -33,7 +33,7 @@ else
     startr= UttSearch_Start(Utt_id);
     startd= startr+ Crude_DelayEst/ Downsample; 
     
-    if ( startd< 0 )       
+    if ( startd<= 0 )       
         startr= 1- Crude_DelayEst/ Downsample;
         startd= 1;
     end
